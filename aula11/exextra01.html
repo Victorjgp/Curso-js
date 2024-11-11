@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificação</title>
+</head>
+<body>
+    <h1>Brasileiro ou estrangeiro?</h1>
+    <input type="text" name="nac" id="inac">
+    <input type="button" value="Verificar" onclick="nacao()"> 
+
+    <div id="res"></div>
+
+    <script>
+        function nacao(){
+            var nac1 = window.document.getElementById('inac')
+            var res = window.document.getElementById('res')
+            var nacValue = nac1.value.trim().toLowerCase()
+            res.innerHTML = `<p> Você digitou: ${nacValue}</p>`
+            
+            if(nacValue === 'brasileiro' ){
+                res.innerHTML += '<p>Você é Brasileiro </p>'
+            }
+            else{
+                res.innerHTML += '<p>Você é estrangeiro</p>'
+            }
+        }
+    </script>
+</body>
+</html>
