@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    Velocidade do carro: <input type="number" name="vel" id="ivel">Km/h
+    <input type="button" value="Verificar" onclick="calcular()">
+
+    <div id="res">
+
+    </div>
+
+    <script>
+        function calcular(){
+        var velo = window.document.getElementById('ivel')
+        var res = window.document.getElementById('res')
+        var vel = Number(velo.value)
+        res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}Km/h</strong></p>`
+
+        if (vel > 60){
+            res.innerHTML += '<p>Você esta <strong>MULTADO</strong> por excesso de velocidade</p>'
+        }
+        res.innerHTML += '<p>Dirija sempre com cinto de segurança</p>'
+        }
+    // na condição do IF se eu usar apenas o sinal de = a mensagem anterior é apagada e permanece apenas a mensagem do IF, já com o += a mensagem anterior é concatenada mantendo a anterior.
+    </script>
+</body>
+</html>
