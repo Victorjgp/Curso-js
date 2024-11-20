@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do dia</title>
+    <style>
+        body{
+            background: rgba(70, 142, 241);
+            font: normal 15pt arial;
+        }
+        header{
+            color: white;
+            text-align: center;
+        }
+        section{
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            width: 500px;
+            margin: auto;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.432);
+        }
+        footer{
+            color: white;
+            text-align: center;
+            font-style: italic;
+        }
+        div{
+            text-align: center;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body onload="carregar()">
+    <header>
+        <h1>Hora do dia</h1>
+    </header>
+    <section>
+        <div id="msg">
+            Mensagem
+        </div>
+        <div id="foto">
+            <img id="img" src="manhab.png" alt="foto do dia">
+        </div>
+    </section>
+    <footer>
+        <p>&copy;Victor ious</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
