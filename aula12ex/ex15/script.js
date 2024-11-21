@@ -16,15 +16,15 @@ function verificar(){
         if (fsex[0].checked){
             genero = 'Homem'
             if(idade >= 0 && idade < 10){
-                //Criança
+                img.setAttribute('src', 'https://images.pexels.com/photos/1104007/pexels-photo-1104007.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
             }else if(idade < 21){
-                // Jovem
+                img.setAttribute('src', 'https://images.pexels.com/photos/1304647/pexels-photo-1304647.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')
             }else if(idade < 50){
-                //Adulto
+                img.setAttribute('src', 'https://images.pexels.com/photos/905375/pexels-photo-905375.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')
             }else{
-                // Idoso
+                img.setAttribute('src', 'https://images.pexels.com/photos/1933873/pexels-photo-1933873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')
             }
-        } else if(fsex.checked[1]) {
+        } else if(fsex[1].checked) {
             genero = 'Mulher'
             if(idade >= 0 && idade < 10){
                 //Criança
